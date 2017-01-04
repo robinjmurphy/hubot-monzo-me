@@ -1,6 +1,6 @@
 {
   "name": "hubot-monzo-me",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Hubot script for generating Monzo.me URLs",
   "main": "index.js",
   "scripts": {
