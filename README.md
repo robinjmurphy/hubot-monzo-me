@@ -6,7 +6,7 @@
 
 ```
 RobinM: monzo me £10 for dinner at Nando's
-Hubot: https://monzo.me/robinmurphy/10?d=Dinner%20at%20Nando%27s
+Hubot: https://monzo.me/robinmurphy/10?d=Dinner%20at%20Nando's
 ```
 
 ## Installation
@@ -29,7 +29,7 @@ Register your Monzo.me username with Hubot:
 
 ```
 RobinM: monzo me username robinmurphy
-Hubot: Thanks RobinM! I've set your Monzo username to robinmurphy
+Hubot: RobinM: Your Monzo username is now set to robinmurphy.
 ```
 
 You can then request money from the room:
