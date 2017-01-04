@@ -5,8 +5,8 @@
 > A simple [Hubot](https://hubot.github.com/) script for generating [Monzo.me](https://monzo.me/) URLs
 
 ```
-RobinM: monzo me £10 for dinner at Nando's
-Hubot: https://monzo.me/robinmurphy/10?d=Dinner%20at%20Nando's
+RobinM: monzo me £10 for dinner at Nando's 🐔
+Hubot: https://monzo.me/robinmurphy/10?d=Dinner%20at%20Nando's%20%F0%9F%90%94
 ```
 
 ## Installation
