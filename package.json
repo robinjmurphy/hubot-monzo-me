@@ -1,0 +1,37 @@
+{
+  "name": "hubot-monzo-me",
+  "version": "1.0.0",
+  "description": "A simple Hubot script for generating Monzo.me URLs",
+  "main": "index.js",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinjmurphy/hubot-monzo-me.git"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "monzo",
+    "me",
+    "url"
+  ],
+  "author": "robin@robinmurphy.co.uk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinjmurphy/hubot-monzo-me/issues"
+  },
+  "homepage": "https://github.com/robinjmurphy/hubot-monzo-me#readme",
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  }
+}
