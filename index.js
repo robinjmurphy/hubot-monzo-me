@@ -8,10 +8,14 @@
 
 const _ = require('lodash');
 
+function key(name) {
+  return `hubot-monzo-me:${name}:username`;
+}
+
 module.exports = (robot) => {
   robot.hear(/^monzo me username$/, (res) => {
     const name = res.message.user.name;
-    const username = robot.brain.get(`hubot-monzo-me:${name}:username`);
+    const username = robot.brain.get(key(name));
 
     if (username) {
       res.reply(`Your Monzo username is set to ${username}. Type "monzo me username <username>" to update it.`);
@@ -24,13 +28,13 @@ module.exports = (robot) => {
     const name = res.message.user.name;
     const username = res.match[1];
 
-    robot.brain.set(`hubot-monzo-me:${name}:username`, username);
+    robot.brain.set(key(name), username);
     res.reply(`Your Monzo username is now set to ${username}.`);
   });
 
   robot.hear(/^monzo me £(\d+\.?\d*)(?: for (.+))?/, (res) => {
     const name = res.message.user.name;
-    const username = robot.brain.get(`hubot-monzo-me:${name}:username`);
+    const username = robot.brain.get(key(name));
     const amount = res.match[1];
     const reason = res.match[2];
 
